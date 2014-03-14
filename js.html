@@ -6,6 +6,7 @@
 		<title>javascript cheat sheet</title>
 		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<link rel="stylesheet" type="text/css" href="grid.css">
+		<link rel="stylesheet" type="text/css" href="hover.css">
 		<link rel="stylesheet" type="text/css" href="js.css">
 		
 	</head>
@@ -14,7 +15,7 @@
 		<div>
 			<div class="container clearfix">
 				<div class="header">
-					<h1 class="title">JavaScript Cheat Sheet...The Basics</h1>
+					<h1 class="title">JavaScript Cheat Sheet<br>The Basics</h1>
 					<p class="description">Ki and myself decided to create a basic JS cheat sheet, based on what we've learned from our Intro to the JS from various tutorials. With time this cheat sheet will hopefully include more important information, based on the growth of our own knowledge.</p>
 				</div>
 				<section class="section">
@@ -23,7 +24,7 @@
 							<h4 class="title">Datatypes</h4>
 							<p class="description">These are the categories of Datatypes that can be highlighted in Javascript</p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow ">
 							<div class="title">Primitives</div>
 							<div class="description">
 								<ol>
@@ -33,7 +34,7 @@
 						        </ol> 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Composites</div>
 							<div class="description">
 								<ol>
@@ -42,7 +43,7 @@
 						        </ol>
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Special</div>
 							<div class="description">
 								<ol>
@@ -61,7 +62,7 @@
 							<h4 class="title">Operators</h4>
 							<p class="description">You have the logical operators which return true/false and you have the Math operators with which you can perform mathematical operations</p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Logical Operators</div>
 							<div class="description">
 								<ul> 
@@ -79,7 +80,7 @@
 						        </ul>
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Math Operators</div>
 							<div class="description">
 								<ul>
@@ -90,9 +91,9 @@
 						            <li>%  modulus</li>
 						            <li>++ increment by one</li>
 						            <li>-- increment by one</li>
-						            <li>+= increment by</li>
-						            <li>-= decrease by</li>
-						            <li>*= multiply by</li>
+						            <li>+= increment by number specified after the equals</li>
+						            <li>-= decrease by number specified after the equals</li>
+						            <li>*= multiply by number specified after the equals</li>
 						        </ul>
 							</div>
 						</div>
@@ -103,66 +104,66 @@
 					<div class="section-inner">
 						<header class="section-header">
 							<h4 class="title">Numbers and Methods</h4>
-							<p class="description">We decided to present mostly the Math methods that you can use with numbers</p>
+							<p class="description">We decided to present mostly the Math methods that come in handy when working with numbers</p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow ">
 							<div class="title">Defining a Number</div>
 							<div class="description">
 								<p>var someNumber = 6</p>  
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow ">
 							<div class="title">.toString()</div>
 							<div class="description">
-								"converts number to a string"
+								converts number to a string
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Math.round(float)</div>
 							<div class="description">
-								"will return an integer, rounding up at x.5, and down at anything below x.5" 
+								returns an integer, rounding up at x.5, and down at anything below x.5 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Math.random() </div>
 							<div class="description">
-								"returns a random number between 0 and 1" 
+								returns a random number between 0 and 1 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Math.floor(float)</div>
 							<div class="description">
-								"" 
+								rounds a number downward to it's nearest integer 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Math.ceil(float)</div>
 							<div class="description">
-								"" 
+								rounds a number upward to it's nearest integer  
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">Math.pow(number, to the power of)</div>
+						<div class="item float-shadow">
+							<div class="title">Math.pow<br>(number, power of)</div>
 							<div class="description">
-								"" 
+								returns the number to the power of specified number
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">Math.sqrt(integer or float)</div>
+						<div class="item float-shadow">
+							<div class="title">Math.sqrt<br>(number)</div>
 							<div class="description">
-								"" 
+								returns the square root 
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">Math.min(integer or float,integer or float)</div>
+						<div class="item float-shadow">
+							<div class="title">Math.min<br>(number, number)</div>
 							<div class="description">
-								"" 
+								more than two arguments can be passed in. Will return the min value 
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">Math.max(integer or float, integer or float)</div>
+						<div class="item float-shadow">
+							<div class="title">Math.max<br>(number, number)</div>
 							<div class="description">
-								"" 
+								more than two arguments can be passed in. Will return the max value 
 							</div>
 						</div>
 					</div>
@@ -173,36 +174,36 @@
 					<div class="section-inner">
 						<header class="section-header">
 							<h4 class="title">RegEx and Methods</h4>
-							<p class="description"></p>
+							<p class="description">There is a lot of resemblance between RegEx Ruby and RegEx JS. Only the methods for matching and substituting are different</p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Defining a RegEx</div>
 							<div class="description">
-								<p>var otherRegex = /regex/</p>  
+								<p>var someRegex = /regex/</p>  
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">string.match(/regex/)</div>
 							<div class="description">
-								"returns the matches as an array"
+								returns the matches as an array
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">regex.test(string)</div>
 							<div class="description">
-								"returns true/false" 
+								returns true/false 
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">variable.replace(/regex/, with what to replace)</div>
+						<div class="item float-shadow">
+							<div class="title">string.replace(/regex/, <br>with what to replace)</div>
 							<div class="description">
-								"" 
+								replaces the specified part with the second argument 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">string.search(/regex/)</div>
 							<div class="description">
-								"returns position of the match, or -1 if no match" 
+								returns position of the match, or -1 if no match 
 							</div>
 						</div>
 					</div>
@@ -214,65 +215,65 @@
 							<h4 class="title">Strings and Methods</h4>
 							<p class="description"></p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Defining a String</div>
 							<div class="description">
-								<p>var someString = new String() - defining a variable with a string value<br>
+								<p>var someString = new String()<br>
         						var otherStirng = "hello"</p>  
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.length</div>
 							<div class="description">
-								"returns the number of characters in the string"
+								returns the number of characters in the string
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">.toUpperCase()/.toLowerCase()</div>
+						<div class="item float-shadow">
+							<div class="title">.toUpperCase()/<br>.toLowerCase()</div>
 							<div class="description">
-								"to capitalize every character or to make lower case for every character" 
+								to capitalize every character or to make lower case for every character 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">string.charAt(index)</div>
 							<div class="description">
-								"returns the character at the index which was passed to the method as an argument" 
+								returns the character at the index which was passed to the method as an argument 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.substr(start, length)</div>
 							<div class="description">
-								"extract part of a string, starting with character at 'start' index, and following 'length' characters" 
+								extract part of a string, starting with character at 'start' index, and following 'length' characters 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.slice(start, end)</div>
 							<div class="description">
-								"extract part of a string, starting with character at 'start' index, and until the specified 'end' index, not including the character at the 'end' index" 
+								extract part of a string, starting with character at 'start' index, and until the specified 'end' index, not including the character at the 'end' index 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.indexOf('string')</div>
 							<div class="description">
-								"checks to see if 'string' is in the string, returns index of starting character if there is a match, returns -1 in no match found" 
+								checks to see if 'string' is in the string, returns index of starting character if there is a match, returns -1 in no match found 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.parseInt(string,base)</div>
 							<div class="description">
-								"converts string to integer, the second parameter defines the base (10: decimal, 16: hexidecimal, etc.)" 
+								converts string to integer, the second parameter defines the base (10: decimal, 16: hexidecimal, etc.) 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">string + string</div>
 							<div class="description">
-								"joins two or more strings" 
+								joins two or more strings 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">string.concat(string)</div>
 							<div class="description">
-								"joins two or more strings" 
+								joins two or more strings 
 							</div>
 						</div>
 					</div>
@@ -284,7 +285,7 @@
 							<h4 class="title">Arrays and Methods</h4>
 							<p class="description"></p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Defining an Array</div>
 							<div class="description">
 								<p>var someArray = new Array()<br>
@@ -292,79 +293,76 @@
 						        </p>   
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Accessing a property</div>
 							<div class="description">
 								<p>index array[index] <br>
-								the indexing starts from 0 (first element will have the index 0) 
+								The first element will have the index 0, the second element index 1, etc 
 						        </p>   
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.length</div>
 							<div class="description">
-								"returns the number of elements in the array"  
+								returns the number of elements in the array  
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.reverse()</div>
 							<div class="description">
-								"reverses the array"
+								reverses the array
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.concat(array)</div>
 							<div class="description">
-								"joins two or more arrays, returns the joint array.<br> 
-            					'+' doesn't work with arrays, only with strings." 
+								joins two or more arrays, returns the joint array.<br> 
+            					'+' doesn't work with arrays, only with strings. 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.toString()</div>
 							<div class="description">
-								"converts array to String " 
+								converts array to String 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.pop()/.push()</div>
 							<div class="description">
-								"delets the last n-elements/pushes elements to the end of the array" 
+								delets the last element/pushes element to the end of the array 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.shift()/.unshift()</div>
 							<div class="description">
-								"deletes the first element and returns it/adds element to the beginning of the array and returns the length" 
+								deletes the first element and returns it/adds element to the beginning of the array and returns the length 
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">.split()</div>
-							<div class="description">
-								"splitan argument is to be passed,otherwise throws an error" 
-							</div>
-						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">join()</div>
 							<div class="description">
-								"by default will join with a comma" 
+								joins all the elements of an array into a string<br>
+								by default will join with a comma 
 							</div>
-						</div>			
-						<div class="item">
-							<div class="title">.slice(number of elements)</div>
+						</div>			 
+						<div class="item float-shadow">
+							<div class="title">.slice(start,end)</div>
 							<div class="description">
-								"deletes the first specified number of elements and returns the new array" 
+								returns the elements from the start (index) up to the end(index) not including the element under the end argument<br>
+								returns an array 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.splice(start, length)</div>
 							<div class="description">
-								"deletes elements from the array" 
+								deletes/adds elements from/to the array<br>
+								very handy when you need to add/delete something from the middle of the array 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">.indexOf(element)</div>
 							<div class="description">
-								"returns the index of the element if the element belongs to the array, otherwise returns -1" 
+								returns the index of the element if the element belongs to the array, otherwise returns -1 
 							</div>
 						</div>
 					</div>
@@ -376,15 +374,15 @@
 							<h4 class="title">Objects and Methods</h4>
 							<p class="description"></p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Defining an Object</div>
 							<div class="description">
 								<p>var someObject = new Object()<br>
            						var otherObject = {}</p>   
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">Adding properties and Values</div>
+						<div class="item float-shadow">
+							<div class="title">Adding Properties<br> & Values</div>
 							<div class="description">
 								<ul> 
 						          <li>someObject.propertyName = value (dot notation)</li> 
@@ -392,7 +390,7 @@
 						        </ul>
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Accessing properties</div>
 							<div class="description">
 								<ul> 
@@ -401,8 +399,8 @@
 						        </ul> 
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">Accessing nested properties</div>
+						<div class="item float-shadow">
+							<div class="title">Accessing nested<br> properties</div>
 							<div class="description">
 								<ul> 
 						          <li>someObject.propertyName1.propertyName1.1</li> 
@@ -411,22 +409,22 @@
 						        </ul>  
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Deleting properties </div>
 							<div class="description">
 								delete someObject.propertyName 
 							</div>
-						</div>
-						<div class="item">
+						</div> 
+						<div class="item float-shadow">
 							<div class="title">Object.keys(someObject)</div>
 							<div class="description">
-								"returns an array of all properties" 
+								returns an array of all properties 
 							</div>
 						</div>
-						<div class="item">
-							<div class="title">Object.keys(someObject.propertyName)</div>
+						<div class="item float-shadow">
+							<div class="title">Object.keys<br>(someObject.propertyName)</div>
 							<div class="description">
-								"returns an array of all properties but for nested objects" 
+								returns an array of all properties, but for nested objects 
 							</div>
 						</div>
 					</div>
@@ -439,30 +437,32 @@
 							<h4 class="title">Loops</h4>
 							<p class="description"></p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">while</div>
 							<div class="description">
-								<p>while(expression) {do something}</p>  
+								<p>while (expression) {do something}</p>  
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">for</div>
 							<div class="description">
 								"for (expression) {do something}"
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">for..in</div>
 							<div class="description">
-								"for (var x in object)<br>said to not always return in order, so in case you are working with arrays, it's beter to loop
-          						with the first for loop" 
+								for (var x in object/array)<br>
+								said to not always return in order, so in case you are working with arrays, it's beter to loop
+          						with the first for loop 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">do { } while</div>
 							<div class="description">
-								"to execute something at least once. In case the while will evaluate to false, since do comes first
-          						your code will still executed but only once" 
+								to execute something at least once.<br> 
+								In case the while will evaluate to false, since do comes first
+          						your code will still be executed, but only once 
 							</div>
 					</div>
 				</section>
@@ -473,32 +473,32 @@
 							<h4 class="title">Conditional</h4>
 							<p class="description"></p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">if statement</div>
 							<div class="description">
 								<p>if (condition) {do something}<br>
-						        else if (condition) {do something}<br>
-						        else {do something}<br>
-						        if you have a simple one line code for each conditional, than ot's not obligatory to use the {}; however, if you
-						        have a code of more than one statement, than it's better to use the {}, otherwise your code will be executed not
+						           else if (condition) {do something}<br>
+						           else {do something}<br>
+						        if you have a simple one line code for each conditional, than not obligatory to use the {};<br> 
+						        however, if you have a code of more than one statement, than it's better to use the {}, otherwise your code will be executed not
 						        just for one condition but for more than one.</p>  
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">switch</div>
 							<div class="description">
 								<p>switch (var name){<br>
-						            case 1:<br>
-						             do something<br>
-						             break;<br>
-						            case 2:<br>
-						             do something<br>
-						             break;<br>
-						            default:<br>
-						             do something<br>
-						             break;<br>
+						             case 1:<br>
+							             do something<br>
+							             break;<br>
+						             case 2:<br>
+							             do something<br>
+							             break;<br>
+						             default:<br>
+							             do something<br>
+							             break;<br>
 						             }<br>
-						        never forget the break, otherwise you will have case 1 and case 2 executed at the same time.      
+						        never forget the 'break' keyword, otherwise, you will have case 1 and case 2 executed at the same time.      
 						        </p>     
 							</div>
 						</div>
@@ -512,10 +512,10 @@
 							<h4 class="title">Function</h4>
 							<p class="description"></p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Defining a function</div>
 							<div class="description">
-								<p>function (nameOfFuncition)(parameters) {code}</p>
+								<p>function (nameOfFuncition) (parameters) {code}</p>
 							</div>
 						</div>
 					</div>
@@ -529,7 +529,7 @@
 							<h4 class="title">Helpful links</h4>
 							<p class="description"></p>
 						</header>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Tutorials</div>
 							<div class="description">
 								<ul>
@@ -539,7 +539,7 @@
 						        </ul> 
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title">Expanded 'Cheat Sheets'</div>
 							<div class="description">
 								<ul>
@@ -548,7 +548,7 @@
 						        </ul>
 							</div>
 						</div>
-						<div class="item">
+						<div class="item float-shadow">
 							<div class="title"> Javascript RegEx console </div>
 							<div class="description">
 								<ul>
