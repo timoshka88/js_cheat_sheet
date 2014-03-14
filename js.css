@@ -1,0 +1,145 @@
+body {
+	background: #DDD;
+	padding: 20px 0px;
+}
+
+.container {
+	margin: 0px auto 20px;
+	padding: 20px;
+	border: 1px solid #CCC;
+	background: #4169E1;
+	border-radius: 8px;
+	position: relative;
+	display: block
+}
+
+
+.header {
+	display: block;
+	color: #FFF;
+	font-size: 130%;
+	text-align: center;
+}
+
+.title {
+	font-size: 130%;
+	margin: 0px 0px 18px;
+}
+
+h1 {
+	display: block;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.section {
+	width: 450px;
+	border: 6px solid #FF4500;
+	border-radius: 12px;
+	background: #FF4500;
+	font-size: 0.9em;
+	display: inline-block;
+	margin: 20px 10px 0px 10px;
+	vertical-align: top;
+}
+
+.section-inner {
+	width: 430px;
+	border: 2px solid #FF9200;
+	background: #FFF;
+	border-radius: 8px;
+	padding: 8px;
+}
+
+.section-header {
+	display: block;
+	color: #000;
+}
+
+.section .title {
+	font-weight: bold;
+	margin: 0.8em 0 0.2em;
+	font-size: 1.1em;
+}
+
+h4 {
+	display: block;
+	-webkit-margin-before: 1.33em;
+	-webkit-margin-after: 1.33em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.description {
+	font-style: italic;
+	margin: 0.2em 0 0.4em 0.2em;
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.item {
+	display: block;
+	clear: both;
+	padding: 10px 0px 8px;
+	border-bottom: 1px dotted #EEE;
+	font-size: 0.8em;
+}
+
+.item .title {
+	float: left;
+	margin: 0px;
+	color: #333;
+	padding-right: 8px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.item .description {
+	padding-left: 136px;
+	margin: 0px;
+
+}
+
+
+.section-last {
+	border: 6px solid #FF4500;
+	border-radius: 12px;
+	background: #FF4500;
+	font-size: 0.9em;
+	display: inline-block;
+	margin: 20px 10px 0px 270px;
+	vertical-align: top;
+}
+
+.section-inner-last {
+	border: 2px solid #FF9200;
+	background: #FFF;
+	border-radius: 8px;
+	padding: 8px;
+}
+
+.section-inner-last .section-header {
+	display: block;
+	color: #000;
+	text-align: center;
+}
+.section-inner-last .description {
+	font-style: italic;
+	margin: 0.2em 0 0.4em 3.4em;
+}
+
+/*.section-inner-last .item {
+	padding-left: 25%
+}*/
+
+
+
+
