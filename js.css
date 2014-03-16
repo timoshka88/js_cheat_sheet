@@ -49,7 +49,7 @@ h1 {
 .section-inner {
 	width: 430px;
 	border: 2px solid #FF9200;
-	background: #FFF;
+	background: #ffffff;
 	border-radius: 8px;
 	padding: 8px;
 }
@@ -165,5 +165,22 @@ p {
 
 .paragraph {
 	display: none;
+}
+
+
+pre {
+	font-size: .9em;
+	line-height: .75em;
+}
+
+.section-inner-title {
+	margin: 0 -8px;
+	padding: 8px 0;
+	background: #e7e7e7;
+}
+
+.section-inner-title h5{
+	text-align: center;
+	margin: 0;
 }
 

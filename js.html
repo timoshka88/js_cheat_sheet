@@ -106,7 +106,7 @@
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
-							<h4 class="title">Numbers and Methods</h4>
+							<h4 class="title">Numbers</h4>
 							<p class="description">We decided to present mostly the Math methods that come in handy when working with numbers</p>
 						</header>
 						<div class="item float-shadow ">
@@ -115,6 +115,11 @@
 								<p>var someNumber = 6</p>  
 							</div>
 						</div>
+
+						<div class="section-inner-title">
+							<h5>Number Methods</h5>
+						</div>
+
 						<div class="item float-shadow ">
 							<div class="title">.toString()</div>
 							<div class="description">
@@ -179,7 +184,7 @@
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
-							<h4 class="title">RegEx and Methods</h4>
+							<h4 class="title">RegEx</h4>
 							<p class="description">There is a lot of resemblance between RegEx Ruby and RegEx JS. Only the methods for matching and substituting are different</p>
 						</header>
 						<div class="item float-shadow">
@@ -188,6 +193,11 @@
 								<p>var someRegex = /regex/</p>  
 							</div>
 						</div>
+
+						<div class="section-inner-title">
+							<h5>RegEx Methods</h5>
+						</div>
+
 						<div class="item float-shadow">
 							<div class="title">string.match(/regex/)</div>
 							<div class="description">
@@ -218,7 +228,7 @@
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
-							<h4 class="title">Strings and Methods</h4>
+							<h4 class="title">Strings</h4>
 							<p class="description"></p>
 						</header>
 						<div class="item float-shadow">
@@ -228,6 +238,11 @@
         						var otherStirng = "hello"</p>  
 							</div>
 						</div>
+
+						<div class="section-inner-title">
+							<h5>String Methods</h5>
+						</div>
+
 						<div class="item float-shadow">
 							<div class="title">.length</div>
 							<div class="description">
@@ -288,7 +303,7 @@
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
-							<h4 class="title">Arrays and Methods</h4>
+							<h4 class="title">Arrays</h4>
 							<p class="description"></p>
 						</header>
 						<div class="item float-shadow">
@@ -307,6 +322,11 @@
 						        </p>   
 							</div>
 						</div>
+
+						<div class="section-inner-title">
+							<h5>Array Methods</h5>
+						</div>
+
 						<div class="item float-shadow">
 							<div class="title">.length</div>
 							<div class="description">
@@ -527,6 +547,54 @@
 					</div>
 				</section>
 
+				<section class="section">
+					<div class="section-inner">
+						<header class="section-header">
+							<h4 class="title">Prototypes</h4>
+							<p class="description">There are no classes in Javascript, but it uses prototypes to allow object oriented programming.  An object's prototype is a link to another object, allowing inheritance from the linked object.</p>
+						</header>
+						<div class="item float-shadow">
+							<div class="title">Constructor Function</div>
+							<div class="description">
+								<p>The most used way in JavaScript to construct prototype chains is the constructor function, which is a special function for creating and initializing a new object.</p>
+
+							</div>
+						</div>
+						<div class="item float-shadow">
+							<div class="title">'new' keyword</div>
+							<div class="description">
+								<p>When using a constructor function to create a new object, the keyword 'new' must be used before the function name.</p>
+								<p>The 'new' keyword looks at the prototype property of the constructor function we are calling, and uses that to construct a brand new object which it passes to the constructor function, and automatically returns it as the result of that function (if nothing else is returned).</p>
+							</div>
+						</div>
+
+						<div class="item float-shadow">
+							<div class="title">Example Prototype</div>
+							<div class="description">
+								<p>The following is an example of how to use prototypes</p>
+								<p><pre><code>
+									<br>var personPrototype = {
+									<br>  kind: human;
+									<br>  greet: function () {
+									<br>    console.log("Hello, my name is " + this.name)
+									<br>  };
+									<br>}
+									<br>
+									<br>//constructor function
+									<br>function Person(name) {
+									<br>  this.name = name;
+									<br>}
+									<br>
+									<br>Person.prototype = personPrototype;
+									<br>
+									<br>var jim = new Person ("Jim");
+									</code></pre>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
 
 				
 				<section class="section-last grid_6">
@@ -559,6 +627,15 @@
 							<div class="description">
 								<ul>
 									<li><a href=" http://regexpal.com/">ReGex Pal</a></li>
+								</ul> 
+							</div>
+						</div>
+
+						<div class="item float-shadow">
+							<div class="title"> Plain English Guide to <br>JavaScript Prototypes</div>
+							<div class="description">
+								<ul>
+									<li><a href="http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/">Prototypes</a></li>
 								</ul> 
 							</div>
 						</div>
