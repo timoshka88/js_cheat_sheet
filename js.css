@@ -1,5 +1,5 @@
 body {
-	background: url('img/Javascript.png') #DDD ;
+	background: #F0FFF0;  /*#1F3952;*/ /*url('img/Javascript.png')*/
 	padding: 20px 0px;
 }
 
@@ -10,7 +10,8 @@ body {
 	background: #4169E1;
 	border-radius: 8px;
 	position: relative;
-	display: block
+	display: block;
+	/*background-image: url('js1.png');*/
 }
 
 
@@ -162,4 +163,7 @@ p {
 
 }
 
+.paragraph {
+	display: none;
+}
 
