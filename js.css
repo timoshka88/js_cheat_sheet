@@ -163,10 +163,6 @@ p {
 
 }
 
-/*.paragraph {
-	display: none;
-}*/
-
 
 pre, code {
 	font-size: 1em;
@@ -192,3 +188,9 @@ ul {
 .go {
 	cursor: pointer;
 }
+
+.note {
+	font-size: 0.5em;
+	text-align: center;
+}
+

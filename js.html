@@ -77,19 +77,45 @@
 						</header>
 						<div class="item float-shadow">
 							<div class="title">Logical Operators</div>
+							<div class="note"><em>*includes examples, just click to expand or collapse</em></div>
 							<div class="description">
 								<ul> 
-						          <li>&& (AND);</li> 
-						          <li>|| (OR);</li> 
-						          <li>! (NOT)</li> 
-						          <li> === Strict Equal</li>
-						          <li>== Equal</li>
-						          <li>!== Strict Not Equal</li> 
-						          <li>!= Not Equal</li> 
-						          <li>> - greater tha</li> 
-						          <li>< - leass than</li> 
-						          <li><= - greater or equal</li> 
-						          <li>=> less or equal</li> 
+						          <li class="go">&& (AND) expressions on both sides have to be true;
+						          <p><pre><code class="prettyprint">
+									3 < 4 && 4 < 5 => true</code></pre></p>
+						          </li> 
+						          <li class="go">|| (OR) experssion at least on one side should be true;
+						          <p><pre><code class="prettyprint">
+									3 < 4 || 4 > 5 => true</code></pre></p>
+						          </li> 
+						          <li class="go">! (NOT)
+						          <p><pre><code class="prettyprint">
+									!(3<4) => false</code></pre></p>
+						          </li> 
+						          <li class="go"> === Strict Equal
+						          <p><pre><code class="prettyprint">
+									3 === 3 => true<br>
+						          	3 === '3' => false</p>
+						          </code></pre></p>
+						          </li>
+						          <li class="go">== Equal
+						          <p><pre><code class="prettyprint">
+									3 == 3 => true <br>
+						          	3 == '3' => true
+						          </code></pre></p>
+						          </li>
+						          <li class="go">!== Strict Not Equal
+						          <p><pre><code class="prettyprint">
+									3 !== 4 => true</code></pre></p>
+						          </li> 
+						          <li class="go">!= Not Equal
+						          <p><pre><code class="prettyprint">
+									3 != '3' => false</code></pre></p>
+						          </li> 
+						          <li> > - greater than</li> 
+						          <li> < - leass than</li> 
+						          <li> <= - greater or equal</li> 
+						          <li> => less or equal</li> 
 						        </ul>
 							</div>
 						</div>
@@ -134,65 +160,83 @@
 
 						<div class="section-inner-title">
 							<h5>Number Methods</h5>
+
 						</div>
+
+						<div class="note"><em>*includes examples, just click to expand or collapse</em></div>
 
 						<div class="item float-shadow ">
 							<div class="title">.toString()</div>
-							<div class="description">
+							<div class="description go">
 								converts number to a string
+								<p><pre><code class="prettyprint">
+								var num = 15
+								<br>var n = num.toString() => '15'</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Math.round(float)</div>
 							<div class="description go">
 								returns an integer, rounding up at x.5, and down at anything below x.5
-								<p class="paragraph"><pre><code class="prettyprint">
+								<p><pre><code class="prettyprint">
 									Math.round(3.4) => 3
 									<br>Math.round(3.6) => 4</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Math.random() </div>
-							<div class="description">
-								returns a random number between 0 and 1 
+							<div class="description go">
+								returns a random number between 0 and 1
+								<p><pre><code class="prettyprint">
+									Math.random() => 0.7151871521491557</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Math.floor(float)</div>
-							<div class="description">
-								rounds a number downward to it's nearest integer 
+							<div class="description go">
+								rounds a number downward to it's nearest integer
+								<p><pre><code class="prettyprint">
+									Math.floor(3.67) => 4</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Math.ceil(float)</div>
-							<div class="description">
-								rounds a number upward to it's nearest integer  
+							<div class="description go">
+								rounds a number upward to it's nearest integer
+								<p><pre><code class="prettyprint">
+									Math.ceil(3.67) => 4</code></pre></p>  
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Math.pow<br>(number, power of)</div>
 							<div class="description go">
 								returns the number to the power of specified number
-								<p class="paragraph"><pre><code class="prettyprint">
+								<p><pre><code class="prettyprint">
 									Math.pow(2,3) => 8</code></pre></p>
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Math.sqrt<br>(number)</div>
-							<div class="description">
-								returns the square root 
+							<div class="description go">
+								returns the square root
+								<p><pre><code class="prettyprint">
+									Math.sqrt(4) => 2</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Math.min<br>(number, number)</div>
-							<div class="description">
-								more than two arguments can be passed in. Will return the min value 
+							<div class="description go">
+								more than two arguments can be passed in. Will return the min value
+								<p><pre><code class="prettyprint">
+									Math.min(3,5,4,2) => 2</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Math.max<br>(number, number)</div>
-							<div class="description">
-								more than two arguments can be passed in. Will return the max value 
+							<div class="description go">
+								more than two arguments can be passed in. Will return the max value
+								<p><pre><code class="prettyprint">
+									Math.max(3,5,4,2) => 5</code></pre></p> 
 							</div>
 						</div>
 					</div>
@@ -221,28 +265,48 @@
 							<h5>RegEx Methods</h5>
 						</div>
 
+						<div class="note"><em>*includes examples, just click to expand or collapse</em></div>
+
 						<div class="item float-shadow">
 							<div class="title">string.match(/regex/)</div>
-							<div class="description">
+							<div class="description go">
 								returns the matches as an array
+								<p><pre><code class="prettyprint">
+									var str = "The rain in SPAIN stays mainly in the plain";<br> 
+									var res = str.match(/ain/g);<br>
+									=>ain,ain,ain
+									</code></pre></p>
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">regex.test(string)</div>
-							<div class="description">
-								returns true/false 
+							<div class="description go">
+								returns true/false
+								<p><pre><code class="prettyprint">
+									var string = "The best things in life are free";<br>
+									/e/.test(str);<br>
+									=>true
+									</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">string.replace(/regex/, <br>with what to replace)</div>
-							<div class="description">
-								replaces the specified part with the second argument 
+							<div class="description go">
+								replaces the specified part with the second argument
+								<p><pre><code class="prettyprint">
+									var string = "Visit Microsoft!";<br>
+									string.replace(/Microsoft/,"DBC")<br>
+									=> 'Visit DBC!'</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">string.search(/regex/)</div>
-							<div class="description">
-								returns position of the match, or -1 if no match 
+							<div class="description go">
+								returns position of the match, or -1 if no match
+								<p><pre><code class="prettyprint">
+									var string = "Visit DBC!";<br>
+									string.search(/DBC/);<br>
+									=>6</code></pre></p> 
 							</div>
 						</div>
 					</div>
@@ -272,58 +336,81 @@
 							<h5>String Methods</h5>
 						</div>
 
+						<div class="note"><em>*includes examples, just click to expand or collapse</em></div>
+
 						<div class="item float-shadow">
 							<div class="title">.length</div>
-							<div class="description">
+							<div class="description go">
 								returns the number of characters in the string
+								<p><pre><code class="prettyprint">
+									'hello'.length => 5</code></pre></p>
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.toUpperCase()/<br>.toLowerCase()</div>
-							<div class="description">
+							<div class="description go">
 								to capitalize every character or to make lower case for every character 
+								<p><pre><code class="prettyprint">
+									'hello'.toUpperCase() => 'HELLO' <br> 
+									'HELLO'.toLowerCase() => 'hello'</code></pre></p>
 							</div>
 						</div>
 						<div class="item float-shadow">
-							<div class="title">string.charAt(index)</div>
-							<div class="description">
-								returns the character at the index which was passed to the method as an argument 
+							<div class="title">.charAt(index)</div>
+							<div class="description go">
+								returns the character at the index which was passed to the method as an argument
+								<p><pre><code class="prettyprint">
+									'hello'.charAt(3) => l <br> 
+									'hello'.charAt(6) => ' '</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.substr(start, length)</div>
-							<div class="description">
-								extract part of a string, starting with character at 'start' index, and following 'length' characters 
+							<div class="description go">
+								extract part of a string, starting with character at 'start' index, and following 'length' characters
+								<p><pre><code class="prettyprint">
+									'hello'.substr(1,3) => 'ell'</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.slice(start, end)</div>
-							<div class="description">
-								extract part of a string, starting with character at 'start' index, and until the specified 'end' index, not including the character at the 'end' index 
+							<div class="description go">
+								extract part of a string, starting with character at 'start' index, and until the specified 'end' index, not including the character at the 'end' index
+								<p><pre><code class="prettyprint">
+									'hello'.slice(1,3) => 'el'</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.indexOf('string')</div>
-							<div class="description">
-								checks to see if 'string' is in the string, returns index of starting character if there is a match, returns -1 in no match found 
+							<div class="description go">
+								checks to see if 'string' is in the string, returns index of starting character if there is a match, returns -1 in no match found
+								<p><pre><code class="prettyprint">
+									'hello'.indexOf('e') => 1<br>
+									'hello'.indexOf('g') => -1</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.parseInt(string,base)</div>
-							<div class="description">
-								converts string to integer, the second parameter defines the base (10: decimal, 16: hexidecimal, etc.) 
+							<div class="description go">
+								converts string to integer, the second parameter defines the base (10: decimal, 16: hexidecimal, etc.)
+								<p><pre><code class="prettyprint">
+									parseInt('5',0) => 5</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">string + string</div>
-							<div class="description">
-								joins two or more strings 
+							<div class="description go">
+								joins two or more strings
+								<p><pre><code class="prettyprint">
+									"hello" + ' ' + 'there' => 'hello there'</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">string.concat(string)</div>
-							<div class="description">
-								joins two or more strings 
+							<div class="description go">
+								joins two or more strings
+								<p><pre><code class="prettyprint">
+									'hello'.concat(' ', 'there') => 'hello there'</code></pre></p> 
 							</div>
 						</div>
 					</div>
@@ -350,10 +437,11 @@
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Accessing a property</div>
-							<div class="description">
-								<p>index array[index] <br>
+							<div class="description go">
+								index array[index] <br>
 								The first element will have the index 0, the second element index 1, etc 
-						        </p>   
+						        <p><pre><code class="prettyprint">
+									array = [1,2,3]<br>array[0] => 1</code></pre></p>    
 							</div>
 						</div>
 
@@ -361,68 +449,96 @@
 							<h5>Array Methods</h5>
 						</div>
 
+						<div class="note"><em>*includes examples, just click to expand or collapse</em></div>
+
 						<div class="item float-shadow">
 							<div class="title">.length</div>
-							<div class="description">
-								returns the number of elements in the array  
+							<div class="description go">
+								returns the number of elements in the array
+								<p><pre><code class="prettyprint">
+									[1,2,3].length => 3</code></pre></p>   
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.reverse()</div>
-							<div class="description">
+							<div class="description go">
 								reverses the array
+								<p><pre><code class="prettyprint">
+									[1,2,3].reverse() => [3,2,1]</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.concat(array)</div>
-							<div class="description">
+							<div class="description go">
 								joins two or more arrays, returns the joint array.<br> 
-            					'+' doesn't work with arrays, only with strings. 
+            					'+' doesn't work with arrays, only with strings.
+            					<p><pre><code class="prettyprint">
+									[1,2,3].concat([4,5,6]) => [1,2,3,4,5,6]</code></pre></p>  
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.toString()</div>
-							<div class="description">
-								converts array to String 
+							<div class="description go">
+								converts array to String
+								<p><pre><code class="prettyprint">
+									[1,2,3].toString() => '1,2,3'</code></pre></p>  
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.pop()/.push()</div>
-							<div class="description">
-								delets the last element/pushes element to the end of the array 
+							<div class="description go">
+								delets the last element/pushes element to the end of the array
+								<p><pre><code class="prettyprint">
+									[1,2,3].pop() => 3<br>
+									[1,2,3].push(5) => 4 <br> 
+									(it will return the length of the new array, however if we had a variable set to this array and we would call this var after the push method, we will get [1,2,3,4]</code></pre></p>  
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.shift()/.unshift()</div>
-							<div class="description">
-								deletes the first element and returns it/adds element to the beginning of the array and returns the length 
+							<div class="description go">
+								deletes the first element and returns it/adds element to the beginning of the array and returns the length
+								<p><pre><code class="prettyprint">
+									[1,2,3,4,5].shift() => 1<br>
+									[1,2,3,4,5].unshift(0) => 6<br>
+									(it will return the length of the new array, however if we had a variable set to this array and we would call this var after the push method, we will get [0,1,2,3,4,5]</code></pre></p>  
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">join()</div>
-							<div class="description">
+							<div class="description go">
 								joins all the elements of an array into a string<br>
 								by default will join with a comma 
+								<p><pre><code class="prettyprint">
+									1,2,3].join() => '1,2,3'<br>
+									[1,2,3].join('-') => '1-2-3'</code></pre></p> 
 							</div>
 						</div>			 
 						<div class="item float-shadow">
 							<div class="title">.slice(start,end)</div>
-							<div class="description">
+							<div class="description go">
 								returns the elements from the start (index) up to the end(index) not including the element under the end argument<br>
 								returns an array 
+								<p><pre><code class="prettyprint">
+									[1,2,3,4,5].slice(1,2) => 2</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.splice(start, length)</div>
-							<div class="description">
+							<div class="description go">
 								deletes/adds elements from/to the array<br>
-								very handy when you need to add/delete something from the middle of the array 
+								very handy when you need to add/delete something from the middle of the array
+								<p><pre><code class="prettyprint">
+									[1,2,3,4,5].splice(1,2) => [2,3]</code></pre></p>  
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">.indexOf(element)</div>
-							<div class="description">
-								returns the index of the element if the element belongs to the array, otherwise returns -1 
+							<div class="description go">
+								returns the index of the element if the element belongs to the array, otherwise returns -1
+								<p><pre><code class="prettyprint">
+									[1,2,3,4,5].indexOf(3) => 2<br> [
+									1,2,3,4,5].indexOf(6) => -1</code></pre></p>  
 							</div>
 						</div>
 					</div>
@@ -489,16 +605,25 @@
 								delete someObject.propertyName 
 							</div>
 						</div> 
+						<div class="note"><em>*includes examples, just click to expand or collapse</em></div>
 						<div class="item float-shadow">
 							<div class="title">Object.keys(someObject)</div>
-							<div class="description">
-								returns an array of all properties 
+							<div class="description go">
+								returns an array of all properties
+								<p><pre><code class="prettyprint">
+									someObject = {hello:"hi",<br> goodbye:"bye"}<br>
+									Object.keys(someObject) => ['hello', 'goodbye']
+									</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Object.keys<br>(someObject.propertyName)</div>
-							<div class="description">
-								returns an array of all properties, but for nested objects 
+							<div class="description go">
+								returns an array of all properties, but for nested objects
+								<p><pre><code class="prettyprint">
+									someObject = {hello:{who:'world'},<br> goodbye:{why:"time to go"}}<br>
+									Object.keys(someObject.hello) => ['who']
+									</code></pre></p> 
 							</div>
 						</div>
 					</div>
@@ -517,11 +642,11 @@
 						<div class="item float-shadow">
 							<div class="title">while</div>
 							<div class="description">
-								<p><pre><code class="prettyprint">
+								<pre><code class="prettyprint">
 									while (expression) {
 									<br>  //do something
 									<br>}
-								</code></pre></p>  
+								</code></pre>  
 							</div>
 						</div>
 						<div class="item float-shadow">
@@ -537,13 +662,13 @@
 						<div class="item float-shadow">
 							<div class="title">for..in</div>
 							<div class="description">
-								for (var x in object/array)<br>
+								<pre><code class="prettyprint">for (var x in object)</code></pre><br>
 								said to not always return in order, so in case you are working with arrays, it's beter to loop
           						with the first for loop 
 							</div>
 						</div>
 						<div class="item float-shadow">
-							<div class="title">do { } while</div>
+							<div class="title">do { }<br>while(condition)</div>
 							<div class="description">
 								to execute something at least once.<br> 
 								In case the while will evaluate to false, since do comes first
@@ -567,13 +692,13 @@
 							<div class="description">
 								<p><pre><code class="prettyprint">
 									<br>if (condition) {
-									<br>  //do something
+									<br>  //do something;
 									<br>}
 						      <br>else if (condition) {
-						      <br>  //do something
+						      <br>  //do something;
 						      <br>}
 						      <br>else {
-						      <br>  //do something
+						      <br>  //do something;
 						      <br>}
 						      <br></code></pre></p>
 						      <p>If you have a simple one line code for each conditional, than not obligatory to use the {};</p>
@@ -620,7 +745,7 @@
 							<div class="description">
 								<p><pre><code class="prettyprint">
 									function funcName (parameters) {
-									<br>  //code
+									<br>  //code;
 									<br>}
 								</code></pre></p>
 							</div>
