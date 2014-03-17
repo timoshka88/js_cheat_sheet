@@ -8,9 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="grid.css">
 		<link rel="stylesheet" type="text/css" href="hover.css">
 		<link rel="stylesheet" type="text/css" href="js.css">
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
- 	 	<script type="text/javascript" src="js.js"></script> -->	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ 	 	<script type="text/javascript" src="js.js"></script>	
 		
 	</head>
 
@@ -19,8 +20,13 @@
 			<div class="container clearfix">
 				<div class="header">
 					<h1 class="title">JavaScript Cheat Sheet<br>The Basics</h1>
-					<p class="description">Ki and myself decided to create a basic JS cheat sheet, based on what we've learned from our Intro to the JS from various tutorials. With time this cheat sheet will hopefully include more important information, based on the growth of our own knowledge.</p>
+					<p class="description">We decided to create a basic JS cheat sheet, based on what we've learned from our Intro to the JS from various tutorials. With time this cheat sheet will hopefully include more important information, based on the growth of our own knowledge.</p>
 				</div>
+
+
+				<!-- ############## DATATYPES ############ -->
+
+
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
@@ -31,10 +37,10 @@
 							<div class="title">Primitives</div>
 							<div class="description">
 								<ol>
-						            <li>Strings = "string"</li>
-						            <li>Numbers = 1</li>
-						            <li>Boolean = true/false</li>
-						        </ol> 
+				          <li>Strings = "string"</li>
+				          <li>Numbers = 1</li>
+				          <li>Boolean = true/false</li>
+				        </ol> 
 							</div>
 						</div>
 						<div class="item float-shadow">
@@ -58,6 +64,10 @@
 						</div>
 					</div>
 				</section>
+
+
+				<!-- ############## OPERATORS ############## -->
+
 
 				<section class="section">
 					<div class="section-inner">
@@ -103,6 +113,10 @@
 					</div>
 				</section>
 
+
+				<!-- ############## NUMBERS ############## -->
+
+
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
@@ -112,7 +126,9 @@
 						<div class="item float-shadow ">
 							<div class="title">Defining a Number</div>
 							<div class="description">
-								<p>var someNumber = 6</p>  
+								<p><code class="prettyprint">
+									var someNumber = 6
+								</code></p>  
 							</div>
 						</div>
 
@@ -130,8 +146,9 @@
 							<div class="title">Math.round(float)</div>
 							<div class="description go">
 								returns an integer, rounding up at x.5, and down at anything below x.5
-								<p class="paragraph">Math.round(3.4) => 3 <br>
-								Math.round(3.6) => 4</p> 
+								<p class="paragraph"><pre><code class="prettyprint">
+									Math.round(3.4) => 3
+									<br>Math.round(3.6) => 4</code></pre></p> 
 							</div>
 						</div>
 						<div class="item float-shadow">
@@ -156,7 +173,8 @@
 							<div class="title">Math.pow<br>(number, power of)</div>
 							<div class="description go">
 								returns the number to the power of specified number
-								<p class="paragraph">Math.pow(2,3) => 8</p>
+								<p class="paragraph"><pre><code class="prettyprint">
+									Math.pow(2,3) => 8</code></pre></p>
 							</div>
 						</div>
 						<div class="item float-shadow">
@@ -180,7 +198,10 @@
 					</div>
 				</section>
 
+
+				<!-- ############## REGEX ############## -->
  
+
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
@@ -190,7 +211,9 @@
 						<div class="item float-shadow">
 							<div class="title">Defining a RegEx</div>
 							<div class="description">
-								<p>var someRegex = /regex/</p>  
+								<p><code class="prettyprint">
+									var someRegex = /regex/
+								</code></p>  
 							</div>
 						</div>
 
@@ -225,6 +248,10 @@
 					</div>
 				</section>
 
+
+				<!-- ############## STRINGS ############## -->
+
+
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
@@ -234,8 +261,10 @@
 						<div class="item float-shadow">
 							<div class="title">Defining a String</div>
 							<div class="description">
-								<p>var someString = new String()<br>
-        						var otherStirng = "hello"</p>  
+								<p><code class="prettyprint">
+									var someString = new String()<br>
+        					var otherStirng = "hello"
+        				</code></p>  
 							</div>
 						</div>
 
@@ -300,6 +329,10 @@
 					</div>
 				</section>
 
+
+				<!-- ############## ARRAYS ############## -->
+
+
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
@@ -309,9 +342,10 @@
 						<div class="item float-shadow">
 							<div class="title">Defining an Array</div>
 							<div class="description">
-								<p>var someArray = new Array()<br>
-						           var otherArray = []<br>
-						        </p>   
+								<p><code class="prettyprint">
+									var someArray = new Array()
+						      <br>var otherArray = []
+						    </code></p>   
 							</div>
 						</div>
 						<div class="item float-shadow">
@@ -394,7 +428,11 @@
 					</div>
 				</section>
 
-        		<section class="section">
+
+				<!-- ############## OBJECTS ############## -->
+
+
+        <section class="section">
 					<div class="section-inner">
 						<header class="section-header">
 							<h4 class="title">Objects and Methods</h4>
@@ -403,16 +441,20 @@
 						<div class="item float-shadow">
 							<div class="title">Defining an Object</div>
 							<div class="description">
-								<p>var someObject = new Object()<br>
-           						var otherObject = {}</p>   
+								<p><code class="prettyprint">
+									var someObject = new Object()<br>
+           				var otherObject = {}
+           			</code></p>   
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">Adding Properties<br> & Values</div>
 							<div class="description">
 								<ul> 
-						          <li>someObject.propertyName = value (dot notation)</li> 
-						          <li>someObject["propertyName"] = value (bracket notation)</li> 
+						          <li><b>Dot Notation:</b><code class="prettyprint">
+						          	<br>someObject.propertyName = value</code></li> 
+						          <li><br><b>Bracket Notation:</b><code class="prettyprint">
+						          	<br>someObject["propertyName"] = value</code></li> 
 						        </ul>
 							</div>
 						</div>
@@ -420,8 +462,8 @@
 							<div class="title">Accessing properties</div>
 							<div class="description">
 								<ul> 
-						          <li>someObject.propertyName</li> 
-						          <li>someObject["propertyName"]</li>
+						          <li><code class="prettyprint">someObject.propertyName</code></li> 
+						          <li><code class="prettyprint">someObject["propertyName"]</code></li>
 						        </ul> 
 							</div>
 						</div>
@@ -429,9 +471,15 @@
 							<div class="title">Accessing nested<br> properties</div>
 							<div class="description">
 								<ul> 
-						          <li>someObject.propertyName1.propertyName1.1</li> 
-						          <li>someObject["propertyName1"]["propertyName1.1"]</li>
-						          <li>someObject.propertyName1["propertyName1.1"]</li>
+						          <li><code class="prettyprint">
+						          	someObject.propName1.propName1.1
+						          </code></li> 
+						          <li><code class="prettyprint">
+						          	someObject["propName1"]["propName1.1"]
+						          </code></li>
+						          <li><code class="prettyprint">
+						          	someObject.propName1["propName1.1"]
+						          </code></li>
 						        </ul>  
 							</div>
 						</div>
@@ -457,6 +505,9 @@
 				</section>
 
 
+				<!-- ############## LOOPS ############## -->
+
+
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
@@ -466,13 +517,21 @@
 						<div class="item float-shadow">
 							<div class="title">while</div>
 							<div class="description">
-								<p>while (expression) {do something}</p>  
+								<p><pre><code class="prettyprint">
+									while (expression) {
+									<br>  //do something
+									<br>}
+								</code></pre></p>  
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">for</div>
 							<div class="description">
-								"for (expression) {do something}"
+								<pre><code class="prettyprint">
+									for (expression) {
+									<br>  //do something
+									<br>}
+								</code></pre>
 							</div>
 						</div>
 						<div class="item float-shadow">
@@ -493,6 +552,10 @@
 					</div>
 				</section>
 
+
+				<!-- ############## CONDITIONAL ############## -->
+
+
 				<section class="section">
 					<div class="section-inner">
 						<header class="section-header">
@@ -502,35 +565,49 @@
 						<div class="item float-shadow">
 							<div class="title">if statement</div>
 							<div class="description">
-								<p>if (condition) {do something}<br>
-						           else if (condition) {do something}<br>
-						           else {do something}<br>
-						        if you have a simple one line code for each conditional, than not obligatory to use the {};<br> 
-						        however, if you have a code of more than one statement, than it's better to use the {}, otherwise your code will be executed not
-						        just for one condition but for more than one.</p>  
+								<p><pre><code class="prettyprint">
+									<br>if (condition) {
+									<br>  //do something
+									<br>}
+						      <br>else if (condition) {
+						      <br>  //do something
+						      <br>}
+						      <br>else {
+						      <br>  //do something
+						      <br>}
+						      <br></code></pre></p>
+						      <p>If you have a simple one line code for each conditional, than not obligatory to use the {};</p>
+						      <p>However, if you have a code of more than one statement, than it's better to use the {}, otherwise your code will be executed not just for one condition but for more than one.</p>
 							</div>
 						</div>
 						<div class="item float-shadow">
 							<div class="title">switch</div>
 							<div class="description">
-								<p>switch (var name){<br>
-						             case 1:<br>
-							             do something<br>
-							             break;<br>
-						             case 2:<br>
-							             do something<br>
-							             break;<br>
-						             default:<br>
-							             do something<br>
-							             break;<br>
-						             }<br>
-						        never forget the 'break' keyword, otherwise, you will have case 1 and case 2 executed at the same time.      
-						        </p>     
+								<pre><code class="prettyprint">
+									<br>switch (var name) {
+						      <br>  case 1:
+							    <br>    //do something
+							    <br>    break;
+						      <br>  case 2:
+							    <br>    //do something
+							    <br>    break;
+						      <br>  default:
+							    <br>    //do something
+							    <br>    break;
+						      <br>}
+						      <br>
+						    </code></pre>
+						    <p>never forget the 'break' keyword, otherwise, you will have case 1 and case 2 executed at the same time.</p>    
+						       
 							</div>
 						</div>
 					</div>
 
 				</section>
+
+
+				<!-- ############## FUNCITONS ############## -->
+
 
 				<section class="section">
 					<div class="section-inner">
@@ -541,11 +618,19 @@
 						<div class="item float-shadow">
 							<div class="title">Defining a function</div>
 							<div class="description">
-								<p>function (nameOfFuncition) (parameters) {code}</p>
+								<p><pre><code class="prettyprint">
+									function funcName (parameters) {
+									<br>  //code
+									<br>}
+								</code></pre></p>
 							</div>
 						</div>
 					</div>
 				</section>
+
+
+				<!-- ############## PROTOTYPES ############## -->
+
 
 				<section class="section">
 					<div class="section-inner">
@@ -572,11 +657,11 @@
 							<div class="title">Example Prototype</div>
 							<div class="description">
 								<p>The following is an example of how to use prototypes</p>
-								<p><pre><code>
+								<p><pre><code class="prettyprint">
 									<br>var personPrototype = {
 									<br>  kind: human;
 									<br>  greet: function () {
-									<br>    console.log("Hello, my name is " + this.name)
+									<br>    console.log("Hello, I'm " + this.name)
 									<br>  };
 									<br>}
 									<br>
@@ -596,7 +681,9 @@
 				</section>
 
 
+				<!-- ############## HELPFUL LINKS ############## -->
 				
+
 				<section class="section-last grid_6">
 					<div class="section-inner-last">
 						<header class="section-header">
