@@ -629,6 +629,57 @@
 					</div>
 				</section>
 
+				<!-- ############## PROTOTYPES ############## -->
+
+
+				<section class="section">
+					<div class="section-inner">
+						<header class="section-header">
+							<h4 class="title">Prototypes</h4>
+							<p class="description">There are no classes in Javascript, but it uses prototypes to allow object oriented programming.  An object's prototype is a link to another object, allowing inheritance from the linked object.</p>
+						</header>
+						<div class="item float-shadow">
+							<div class="title">Constructor Function</div>
+							<div class="description">
+								<p>The most used way in JavaScript to construct prototype chains is the constructor function, which is a special function for creating and initializing a new object.</p>
+
+							</div>
+						</div>
+						<div class="item float-shadow">
+							<div class="title">'new' keyword</div>
+							<div class="description">
+								<p>When using a constructor function to create a new object, the keyword 'new' must be used before the function name.</p>
+								<p>The 'new' keyword looks at the prototype property of the constructor function we are calling, and uses that to construct a brand new object which it passes to the constructor function, and automatically returns it as the result of that function (if nothing else is returned).</p>
+							</div>
+						</div>
+
+						<div class="item float-shadow">
+							<div class="title">Example Prototype</div>
+							<div class="description">
+								<p>The following is an example of how to use prototypes</p>
+								<p><pre><code class="prettyprint">
+									<br>var personPrototype = {
+									<br>  kind: human;
+									<br>  greet: function () {
+									<br>    console.log("Hello, I'm " + this.name)
+									<br>  };
+									<br>}
+									<br>
+									<br>//constructor function
+									<br>function Person(name) {
+									<br>  this.name = name;
+									<br>}
+									<br>
+									<br>Person.prototype = personPrototype;
+									<br>
+									<br>var jim = new Person ("Jim");
+									</code></pre>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
 
 				<!-- ############## LOOPS ############## -->
 
@@ -754,56 +805,7 @@
 				</section>
 
 
-				<!-- ############## PROTOTYPES ############## -->
-
-
-				<section class="section">
-					<div class="section-inner">
-						<header class="section-header">
-							<h4 class="title">Prototypes</h4>
-							<p class="description">There are no classes in Javascript, but it uses prototypes to allow object oriented programming.  An object's prototype is a link to another object, allowing inheritance from the linked object.</p>
-						</header>
-						<div class="item float-shadow">
-							<div class="title">Constructor Function</div>
-							<div class="description">
-								<p>The most used way in JavaScript to construct prototype chains is the constructor function, which is a special function for creating and initializing a new object.</p>
-
-							</div>
-						</div>
-						<div class="item float-shadow">
-							<div class="title">'new' keyword</div>
-							<div class="description">
-								<p>When using a constructor function to create a new object, the keyword 'new' must be used before the function name.</p>
-								<p>The 'new' keyword looks at the prototype property of the constructor function we are calling, and uses that to construct a brand new object which it passes to the constructor function, and automatically returns it as the result of that function (if nothing else is returned).</p>
-							</div>
-						</div>
-
-						<div class="item float-shadow">
-							<div class="title">Example Prototype</div>
-							<div class="description">
-								<p>The following is an example of how to use prototypes</p>
-								<p><pre><code class="prettyprint">
-									<br>var personPrototype = {
-									<br>  kind: human;
-									<br>  greet: function () {
-									<br>    console.log("Hello, I'm " + this.name)
-									<br>  };
-									<br>}
-									<br>
-									<br>//constructor function
-									<br>function Person(name) {
-									<br>  this.name = name;
-									<br>}
-									<br>
-									<br>Person.prototype = personPrototype;
-									<br>
-									<br>var jim = new Person ("Jim");
-									</code></pre>
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
+				
 
 
 				<!-- ############## HELPFUL LINKS ############## -->
